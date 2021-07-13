@@ -1,25 +1,3 @@
-html,body{
-    height: 100% ;
-    /* overflow-y: hidden;  */
-}
-.st-font{
-    font-family: 'Dancing Script', cursive;
-}
-
-.container-fluid{
-    min-height: 100%;
-}
-.container{
-    width: 93%;
-}
-/* service icon color */
-.icolor{
-    color:chartreuse;
-}
-/* service subtitle color */
-.ss-color{
-    color: silver;
-}
 
 /* contact page css */
 .formstyle{
