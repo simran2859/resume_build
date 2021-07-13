@@ -1,13 +1,14 @@
+
 html,body{
     height: 100% ;
-    /* overflow-y: hidden;  */
+     /* overflow-y: hidden;   */
 }
 .st-font{
     font-family: 'Dancing Script', cursive;
 }
 
-.container-fluid,.container-fluid .row{
-    height: inherit;
+.container-fluid,.container-fluid>.row{
+    min-height: 100%;
 }
 
 .container{
@@ -20,4 +21,19 @@ html,body{
 /* service subtitle color */
 .ss-color{
     color: silver;
+}
+@media only screen and (max-width: 800px) {
+    .container{
+        width: 100%;
+    }
+    .container-fluid>.row{
+        display: flex;
+        flex-direction: column;
+    }
+    .container-fluid .row .col-sm-2,.container-fluid .row .col-sm-10{
+      width: auto;
+    }
+    .border-end {
+        border-right: none;
+    }
 }

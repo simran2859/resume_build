@@ -39,3 +39,12 @@ border: none;
 .fa-linkedin,.fa-facebook-square,.fa-twitter-square,.fa-github-square{
     font-size: 26px;
 }
+@media only screen and (max-width: 800px) {
+    .formstyle .row {
+        display: flex;
+        flex-direction: column;
+    }
+    .formstyle .col-8, .formstyle .col-4{
+        width: auto;
+    }
+}
