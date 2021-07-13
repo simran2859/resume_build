@@ -1,6 +1,7 @@
 {% extends 'core/base.html' %}
 
 {% load static %}
+
 {% block xtracss %}
 <link rel="stylesheet" href="{% static 'core/css/contact.css' %}">
 {% endblock xtracss %}
@@ -12,39 +13,66 @@
     <h1 class=" mb-5 border-bottom text-capitalize text-warning">contact</h1>
     <div class="formstyle">
  
-    <div class="row">
-         <div class="col-8">
-               <dic class="row g-2">
-                    <div class="col-md">
-                        <div class="form-floating mb-3">
-                                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                                <label for="floatingInput " class="text-capitalize">first Name</label>
+        <div class="row">
+            <div class="col-8">
+                <dic class="row g-2">
+                        <div class="col-md">
+                            <div class="form-floating mb-3">
+                                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                    <label for="floatingInput " class="text-capitalize">first Name</label>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-md">
-                        <div class="form-floating mb-3">
-                                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                                <label for="floatingInput " class="text-capitalize">last name</label>
+                        <div class="col-md">
+                            <div class="form-floating mb-3">
+                                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                    <label for="floatingInput " class="text-capitalize">last name</label>
+                            </div>
                         </div>
+                </dic>
+                    <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput" class="text-capitalize">Email address</label>
                     </div>
-               </dic>
-                <div class="form-floating mb-3">
-                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                        <label for="floatingInput" class="text-capitalize">Email address</label>
-                </div>
-                <div class="form-floating mb-3">
-                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
-                    <label for="floatingTextarea2 " class="text-capitalize">message</label>
-                </div>
-              <div class="text-end"> <a href="#" class="btn btn-warning " tabindex="-1" role="button" aria-disabled="true">Contact me!</a></div>
+                    <div class="form-floating mb-3">
+                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                        <label for="floatingTextarea2 " class="text-capitalize">message</label>
+                    </div>
+                <div class="text-end"> <a href="#" class="btn btn-warning " tabindex="-1" role="button" aria-disabled="true">Contact me!</a></div>
 
-         </div>
-         <div class="col-4">
-         </div>
-      </div>
-    </div>
+            </div>
+            <div class="col-4 text-center">
+                    
+                <ul class="list-unstyled">
+                    <li class="mb-4">
+                    <i class="fas fa-map-marker-alt"></i>
+                        <p>West Palm Beach, 4669 <br> Travis Street</p>
+                    </li>
+                    <li class="mb-5">
+                        <i class="fas fa-phone-alt"></i>
+                        <p>+44 1632 960428</p>
+                    </li>
+                    <li class="mb-5">
+                        <i class="far fa-envelope"></i>
+                        <p>hello@xyz.com</p>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+      
     
     </div>
+    <div class="container my-5">
+    <header class="d-flex justify-content-center py-3">
+      <ul class="nav nav-pills">
+        <li class="nav-item"><a href="#" class="nav-link"><i class="fab fa-linkedin" style="color:#696a7e ;"></i></a></li>
+        <li class="nav-item"><a href="#" class="nav-link"><i class="fab fa-facebook-square" style="color:#6e6edf ;"></i></a></li>
+        <li class="nav-item"><a href="#" class="nav-link"><i class="fab fa-twitter-square" style="color:#88faff ;"></i></a></li>
+        <li class="nav-item"><a href="#" class="nav-link"><i class="fab fa-github-square " style="color: red;"></i></a></li>
+        {% comment %} <li class="nav-item"><a href="#" class="nav-link"><i class="fab fa-pinterest-square"></i></a></li> {% endcomment %}
+      </ul>
+    </header>
+  </div>
 </div>
 
 {% endblock content %}

@@ -20,33 +20,3 @@ html,body{
 .ss-color{
     color: silver;
 }
-
-/* contact page css */
-.formstyle{
-    font-family: 'Poppins', sans-serif;
-    }
-.formstyle input,.formstyle textarea{
-        background-color: #06040752;
-    border: 1px solid #8e8a5e70;
-    border-radius: 26px;
-    box-shadow: inset 2px 2px 2px black;
-}
- .btn{   border-radius: 26px;}
-
-.form-floating>.form-control {
-		padding: 1rem 29px;
-}
-.form-control,.form-control:focus{color:#82829d;}
-.form-floating>label {left: 18px;}
-.formstyle label {
-color: #88881f;
-text-shadow: 3px 2px 4px black;
-}
-.form-control:focus {
-
-background-color: #06040752;
-
-outline: 0;
-box-shadow: 4px 3px 7px 0px #060407;
-border: none;
-}

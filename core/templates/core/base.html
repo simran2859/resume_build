@@ -7,15 +7,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    {% comment %} <script src="https://kit.fontawesome.com/5ed1820f6c.js" crossorigin="anonymous"></script> {% endcomment %}
     <link rel="stylesheet" href="{% static 'core/css/all.min.css' %}">
-    <link rel="stylesheet" href="{% static "core/css/bootstrap.css"%}">
+  
+    <link rel="stylesheet" href="{% static "core/css/bootstrap.css" %}">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    {% block xtracss %}{% endblock xtracss %}
     {% block corecss %} 
     <link rel="stylesheet" href="{% static "core/css/core.css" %}">
     {% endblock corecss %}
-    {% block xtracss %}{% endblock xtracss %}
 </head>
 
 <body>
