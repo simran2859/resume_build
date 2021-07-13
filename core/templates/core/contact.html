@@ -1,0 +1,75 @@
+{% extends 'core/base.html' %}
+
+
+{% block xtracss %}
+<style>
+
+.formstyle{border: 2px solid #212529;
+    height: 500px;
+    box-shadow: 0px 0px 7px 1px #1f1d1d;
+    border-radius: 50px;
+    font-family: 'Poppins', sans-serif;
+    }
+.formstyle input,.formstyle textarea{
+        background-color: #06040752;
+    border: 1px solid #8e8a5e70;
+    border-radius: 26px;
+    box-shadow: inset 2px 2px 2px black;
+}
+.form-floating>.form-control {
+		padding: 1rem 29px;
+}
+.form-control,.form-control:focus{color:#82829d;}
+.form-floating>label {left: 18px;}
+.formstyle label {
+color: #88881f;
+text-shadow: 3px 2px 4px black;
+}
+	.form-control:focus {
+
+background-color: #06040752;
+	3. /* 
+border-color: #000000; */
+outline: 0;
+box-shadow: 4px 3px 7px 0px #060407;
+border: none;
+}
+</style>
+{% endblock xtracss %}
+
+{% block content %} 
+
+<div class="container mt-5">
+    <h1 class=" mb-5 border-bottom text-capitalize text-warning">contact</h1>
+    <div class="formstyle">
+  <div class="container">
+    
+           <dic class="row g-2">
+                <div class="col-md">
+                    <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput " class="text-capitalize">first Name</label>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput " class="text-capitalize">last name</label>
+                    </div>
+                </div>
+           </dic>
+            <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput" class="text-capitalize">Email address</label>
+            </div>
+            <div class="form-floating">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                <label for="floatingTextarea2 " class="text-capitalize">message</label>
+            </div>
+      
+  </div>
+    
+    </div>
+</div>
+
+{% endblock content %}
