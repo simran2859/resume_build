@@ -1,14 +1,18 @@
-
-html,body{
+html{
+    height: auto;
+}
+body{
     height: 100% ;
-     /* overflow-y: hidden;   */
+     overflow-y: hidden;  
+    background-color: #212529;
 }
 .st-font{
     font-family: 'Dancing Script', cursive;
 }
 
 .container-fluid,.container-fluid>.row{
-    min-height: 100%;
+    height: inherit;
+    
 }
 
 .container{
@@ -22,9 +26,35 @@ html,body{
 .ss-color{
     color: silver;
 }
+a.nav-link{
+    color: whitesmoke;
+}
+a.nav-link:hover{
+    color: black;
+    background-color: darkgoldenrod;
+}
+a.nav-link.active{
+    color: black;
+    background-color: #ffc107;
+    font-weight: bold;
+}
+@media only screen and (max-width:1300px) {
+    body{
+        overflow-y: visible;
+    }
+    .container-fluid,.container-fluid>.row{
+        height:auto;
+       
+    }
+}
 @media only screen and (max-width: 800px) {
+   
     .container{
         width: 100%;
+    }
+    .container-fluid,.container-fluid>.row{
+        height:auto;
+       
     }
     .container-fluid>.row{
         display: flex;
