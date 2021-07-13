@@ -6,9 +6,10 @@ html,body{
     font-family: 'Dancing Script', cursive;
 }
 
-.container-fluid{
-    min-height: 100%;
+.container-fluid,.container-fluid .row{
+    height: inherit;
 }
+
 .container{
     width: 93%;
 }
