@@ -29,11 +29,11 @@ body{
 a.nav-link{
     color: whitesmoke;
 }
-.highlight a.nav-link:hover{
+.highlight a.main-nav:hover{
     color: black;
     background-color: darkgoldenrod;
 }
-.highlight a.nav-link.active{
+.highlight a.main-nav.active{
     color: black;
     background-color: #ffc107;
     font-weight: bold;

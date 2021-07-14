@@ -39,8 +39,8 @@ border: none;
 .fa-linkedin,.fa-facebook-square,.fa-twitter-square,.fa-github-square{
     font-size: 26px;
 }
-.nav-pills a.nav-link:hover{
-    box-shadow: inset -3px -1px 9px 0px #130c0c;
+.nav-pills a.nav-l:hover{
+    box-shadow: inset -3px -1px 9px 0px #130c0c !important;
 }
 @media only screen and (max-width: 800px) {
     .formstyle .row {
